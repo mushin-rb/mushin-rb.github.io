@@ -1,2 +1,2 @@
-mushin-rb.github.io-
+mushin-rb.github.io
 ====================

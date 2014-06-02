@@ -6,6 +6,7 @@
 body {
   padding:50px;
   font-family: "Orbitron", 'Maven Pro';
+  letter-spacing:2px;
   color:#777;
   font-weight:300;
 }

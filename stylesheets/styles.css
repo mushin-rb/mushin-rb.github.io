@@ -7,6 +7,7 @@ body {
   padding:50px;
   font-family: "Orbitron", 'Maven Pro';
   letter-spacing: 2.2px;
+  line-height: 1.5;
   color:#777;
   font-weight:400;
 }

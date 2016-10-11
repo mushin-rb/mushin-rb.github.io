@@ -133,6 +133,33 @@ $ mushin --help<!--
       -->
 
 
+      <h3>Philosophy</h3>
+      <p>
+      Mushin
+
+      <div class="highlight">
+	<pre>
+<code class='ruby'>$ gem install mushin
+Mushin::Stack.new do 
+	# core domain in relevance to the application 
+	use  DomainA, {}, {}
+	# supporting domains in relevance to the application 
+	use  DomainB, {}, {}
+	use  DomainC, {}, {}
+	use  DomainD, {}, {}
+	# generic domains in relevance to the application 
+	use  DomainE, {}, {}
+	use  DomainF, {}, {}
+	use  DomainG, {}, {}
+end
+	</code></pre>
+      </div>
+
+      </p>
+      <hr/>
+      <br>
+
+
       <h3>Open Source</h3>
       <p>can we do better? read the  <a href="http://mushin-rb.github.io/">source</a>, <a href="https://github.com/mushin-rb/mushin/fork">fork</a> it, or submit a <a href="https://github.com/mushin-rb/mushin/issues/new">feature request\report a bug</a> to improve it, all contributions count! 
       </p>

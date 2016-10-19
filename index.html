@@ -180,7 +180,10 @@ end
 state = {:var => "value"}
 bot = Bot.new
 bot.call(state)
-state[:var].must_equal "new_value" (depends on your testing framework, this one assumes minitest/spec)
+
+# depends on your testing framework, 
+# this one assumes minitest/spec
+state[:var].must_equal "new_value" 
 	</code></pre>
 
       </div>

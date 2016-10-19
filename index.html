@@ -173,6 +173,7 @@ class Bot < Mushin::Ext
 	   @app = app
 	end
 	def call(env)
+	   env[:var] = "new_value"
 	   @app.call(env)
 	end
 end

@@ -140,6 +140,7 @@ $ mushin --help<!--
       Knowledge utilized within an application may belong to its core domain, supporting domains or other generic domains.
       Mushin perceives this utilization in the form of a stack of middlewares that resonates well with the 
       <a href="https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern">Chain-of-responsibility pattern</a>.
+
       <div class="highlight">
 	<pre>
 <code class='ruby'>
@@ -161,6 +162,27 @@ Mushin::Stack.new do
 	use  DomainG, {}, {}
 end
 	</code></pre>
+
+      </div>
+
+      <div class="highlight">
+	<pre>
+<code class='ruby'>
+class Bot < Mushin::Ext
+	def initialize(app=nil)
+	   @app = app
+	end
+	def call(env)
+	   @app.call(env)
+	end
+end
+# Testing any Mushin Extenstion goes like this 
+state = {:var => "value"}
+bot = Bot.new
+bot.call(state)
+state[:var].must_equal "new_value" (depends on your testing framework, this one assumes minitest/spec)
+	</code></pre>
+
       </div>
 
       </p>

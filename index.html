@@ -144,6 +144,7 @@ $ mushin --help<!--
       <div class="highlight">
 	<pre>
 <code class='ruby'>
+require 'mushin'
 Mushin::Stack.new do 
 	# core domain 
 	# in relevance to the application 
@@ -168,6 +169,7 @@ end
       <div class="highlight">
 	<pre>
 <code class='ruby'>
+require 'mushin'
 class Bot < Mushin::Ext
 	def initialize(app=nil, opts={}, params={})
 	   @app     = app
@@ -193,7 +195,8 @@ bot.call(state)
 
 # depends on your testing framework, 
 # this one assumes minitest/spec
-state[:var].must_equal "new_value_outbound" 
+#state[:var].must_equal "new_value_outbound" 
+p state[:var].must_equal
 	</code></pre>
 
       </div>

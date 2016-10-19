@@ -169,23 +169,29 @@ end
 	<pre>
 <code class='ruby'>
 class Bot < Mushin::Ext
-	def initialize(app=nil)
+	def initialize(app=nil, opts={}, params={})
 	   @app = app
 	end
 	def call(env)
-	   env[:var] = "new_value"
+           # Inbound maniuplation
+	   env[:var] = "new_value_inbound"
+
 	   @app.call(env)
+
+	   #Outbound maniuplation
+	   env[:var] = "new_value_outbound"
+
 	end
 end
 
 # Testing any Mushin Extenstion goes like this 
 state = {:var => "value"}
-bot = Bot.new
+bot = Bot.new Proc.new {},{},{}
 bot.call(state)
 
 # depends on your testing framework, 
 # this one assumes minitest/spec
-state[:var].must_equal "new_value" 
+state[:var].must_equal "new_value_outbound" 
 	</code></pre>
 
       </div>

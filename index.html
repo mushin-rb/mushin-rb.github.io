@@ -170,7 +170,9 @@ end
 <code class='ruby'>
 class Bot < Mushin::Ext
 	def initialize(app=nil, opts={}, params={})
-	   @app = app
+	   @app     = app
+	   @opts    = opts 
+	   @params  = params 
 	end
 	def call(env)
            # Inbound maniuplation

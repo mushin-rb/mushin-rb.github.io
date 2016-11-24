@@ -13,12 +13,12 @@ $users = {}
 bot = Cinch::Bot.new do
   configure do |c|
     c.server = "irc.freenode.org"
-    c.channels = ["#mushin-rb"]
-    c.nick     = "mushin-rb"
+    c.channels = ["#mushin-rb", "#hackspree", "#utter"]
+    c.nick     = "hackspreebot"
   end
 
   on :message, "help" do |m|
-    m.reply "Hello #{m.user.nick}, you can always visit http://mushin-rb.github.io for information!"
+    m.reply "Hello #{m.user.nick}, you can always visit http://hackspree.com for information!"
   end
 
   helpers do

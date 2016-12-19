@@ -6,273 +6,263 @@
     <title>mushin - welcome</title>
     <link rel="icon" type="image/png" href="img/icon.png" />
 
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <!-- Compiled and minified CSS 
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
     <div class="wrapper">
       <header>
-      <img class="rotate" src="img/logo_ready.png"  alt="mushin">
-      <br>
-      <br>
-      <br>
-      <p>"In the beginner's mind there are many possibilities, in the expert's there are few." 
-      </p>
-      <p>
-      mushin allows you to develop domain-specific ruby applications, along with domain experts via domain-specific languages, and domain extenstions.
-      </p>
-      <p>
-      mushin is complete awesomeness!
-      </p>
-      <!--
-      <img src="img/logo2.png" alt="mushin"  height="220" width="220">
-      <h6> mushin roll [your-DDD-framework] </h6>
-      <p> mushin roll <p style="color:grey;">[your-DDD-framework] </p>
-      </p>
-      <h1>mushin</h1>
-      <p class="view"><a href="https://github.com/mushin-rb">View My GitHub Profile</a></p>
-      -->
-      <p></p>
+	<img class="rotate" src="img/mushingem.png"  alt="mushin">
+	<br>
+	<br>
+	<p> 
+	<h6>
+	  <b>Mushin is a Domain-specific Frameworks Generator written in Ruby.</b> 
+	</br>
+	</br>
+	Mushin-based frameworks complements Ruby applications with seamless, yet powerful support of Domain-specific Languages, CQRS, EventSourcing, and Pluggable Domain Extenstions.
+
+	<!--
+   <b>Mushin is a ruby Domain Engineering Framework</b> for building domain-specific frameworks.
+   <b>Mushin is a ruby Domain Engineering Framework</b> for building distributable domain gems. 
+   A mushin domain gem complements your Ruby application(s) with *seamless support of Domain-specific Languages, CQRS, EventSourcing, and Pluggable Domain Extenstions.
+	-->
+	</h6>
+	</br>
+	</b>
+	Distributed under the MIT License
+	</br>
+
+	</p>
+
+
+	<!--
+   social media iframe that i can edit once on the hackspree repo and it automatically gets updated on all the other sites.
+	-->
+	<p>
+	<!--
+   A mushin domain consites of
+   1) event stream logs every event takes places in the domain in append-only immutable manner.
+   1) command stack that acts as... that executes validations and consequential logic
+   2) query stack that acts as pure functions that provides presentational updates 
+	-->
+	</p>
+	<!--
+   <img src="img/logo2.png" alt="mushin"  height="220" width="220">
+   <h6> mushin roll [your-DDD-framework] </h6>
+   <p> mushin roll <p style="color:grey;">[your-DDD-framework] </p>
+   </p>
+   <h1>mushin</h1>
+   <p class="view"><a href="https://github.com/mushin-rb">View My GitHub Profile</a></p>
+	-->
+	<p></p>
 
 
 
       </header>
       <section>
-      <h3>Welcome to Mushin</h3>
-
-      <div class="highlight">
-	<pre> <code class='bash'>$ mushin new domain </code></pre>
-      </div>
-
-      <p>generate gem packageable domain-specific frameworks!</p>
-
-      <div class="highlight">
-	<pre> <code class='bash'>$ mushin new ext </code></pre>
-      </div>
-
-      <p>generate gem packageable domain-specific extensions!</p>
-
-
-<!--
-      <p>the mushin gem enables you to generate rich <strong>DDD 2.0</strong> frameworks based-on your application's core domain, and publish it in secs!</p>
-      -->
-      <hr/>
-      <br>
-
-      <h3>Quick Start</h3>
-
-      <div class="highlight">
-<pre>
-<code class='bash'>$ gem install mushin
-$ mushin --help<!--
- Usage: mushin [command] [options]
- setup  :    generats mushin setup.rb
- roll      :    roll your own framework
- share  :    share your framework on rubygems.org
- clean   :    clean out generated 0.0.0.pre1 gems
--->
-</code></pre>
-      </div>
-      <!--
-      <strong>Read <a href="documentation.html">Full Documentation</a>
-	<strong>read <a>Full Documentation </a> (under lazy development, sorry!)
-	  </strong>
+	<!--
+   <h3>Welcome to Mushin</h3>
 	-->
-      <br>
-<!--
-      <hr/>
-      <br>
-      <h3>Domain Driven Design 2.0</h3>
+	<p> 
 
-      <p>while DDD advocates the rewards of engaging <strong>domain experts</strong> in the development process. a lot of complex notions polluted its implementations' premise, mainly  due to the inhernted complexity of popular static languages tools. hence it failed to disendorse bad design descions from the application level.</p>
+	<!--
+   Mushin is a Domain-driven Design framework for leveraging Domain Experts knowledge in building domain-specific Ruby applications. 
+	-->
+	</p> 
 
-      <p>ruby's elegent nature inspired a much simpler, easier to reason about implementation worthy of it's diffrentiating label, meet <strong>DDD 2.0</strong> </p>
+	<!--
+   <p>the mushin gem enables you to generate rich <strong>DDD 2.0</strong> frameworks based-on your application's core domain, and publish it in secs!</p>
+	-->
+	<hr/>
 
-      <p><strong>DDD 2.0</strong> shines as a middleware architecture design practice that - through metaprogramming and codegeneration - promotes each domain to have its own framework and middleware stacks.</p> 
+	<h3>Quick Start</h3>
 
-      <p>launching a new era for domain experts\developers to effectivly publish their reusable outcomes. 
-      </p>
+	<div class="highlight">
+	  <pre><code class='bash'>$ gem install mushin</code></pre>
+	</div>
+	<p>installs the <b>mushin gem</b> on your system.</p>
 
-      <p> <strong>DDD 2.0</strong> forces out complexity from your application's top level to enumerable stacks of domain-aware middlewares, making them - in isolation - easier to test, develop, and integration ready.</p>
+	<div class="highlight">
+	  <pre> <code class='bash'>$ mushin g dsf</code></pre>
+	</div>
 
+	<p>starts an interactive <b>domain-specific framework</b> generation wizard.</p>
 
-      <hr/>
-      <br>
-      -->
-      <!--
-      <p>Mushin provides DDD 2.0 code generation capabilities that consistently guides your App's overall design towards Dijkstra's - Simplicity is prerequisite for reliability. </p>
-      <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-      <h3>Code Generation</h3>
-      <p>using mushin, developers in your team can collaborate either by generating <strong>Domain Framework(s)</strong>, <strong>Domain Middleware(s)</strong>, or both!</p>
+	<div class="highlight">
+	  <pre> <code class='bash'>$ mushin g ext </code></pre>
+	</div>
 
-      <p> 
-      Mushin's generated<strong>  Domain Frameworks</strong>  comes with autonomous data persistence middlewares.
-      </p>
-      <p>All generated<strong>  Domain Middlewares</strong>  may work inconcert or separately.</p>
+	<p>starts an interactive <b>domain-specific extenstion</b> generation wizard.</p>
 
+	<div class="highlight">
+	  <pre> <code class='bash'>$ mushin help </code></pre>
+	  <!--
+     Usage: mushin [command] [options]
+     setup  :    generats mushin setup.rb
+     roll      :    roll your own framework
+     share  :    share your framework on rubygems.org
+     clean   :    clean out generated 0.0.0.pre1 gems
+	  -->
+	</div>
+	<p> lists <b>mushin documentation</b> resources.</p>
+	<!--
+   <strong>Read <a href="documentation.html">Full Documentation</a>
+   <strong>read <a>Full Documentation </a> (under lazy development, sorry!)
+   </strong>
+	-->
+	<br>
+	<br>
 
-      <p>Mushin features DDD 2.0 code generation options that guides your App's overall design constantly towards Dijkstra's - Simplicity is prerequisite for reliability. </p>
-      <hr/>
-      <br>
-
-      <h3>Ecosystem Simplicity</h3>
-      <p>mushin lets you generate your own core domain framework and middlewares as gems.</p>
-
-      
-      <p>other developers may neatly plug'n play your middlewares into their new or existing ruby applications.</p>
-
-      <p>your app's core-domain maybe a <strong>supporting domain</strong> or <strong>generic-sub domain</strong> in other apps.</p> 
-
-      <p>mushin mandate is to encourge you to naturally (re)draw your ruby code designs inaccordance with Dijkstra's - <strong> Simplicity is prerequisite for reliability</strong>; and to ulitmatly enable us to reuse <strong>domain middlewares</strong> as a community.</p>
-      -->
-<!--
-      <p>Mushin mandate is to (re)draw your design inaccordance to guides your App's overall design constantly towards Dijkstra's - <strong> Simplicity is prerequisite for reliability.</strong> </p>
-      -->
-      <br>
-
-<!--
-      <h3>Versioning</h3>
-      <p>
-      mushin follows <a href="http://semver.org/">Semantic Versioning</a>, both SemVer and SemVerTag.
-      </p>
-      <hr/>
-      <br>
-      -->
+	<!--
+   <h3>Versioning</h3>
+   <p>
+   mushin follows <a href="http://semver.org/">Semantic Versioning</a>, both SemVer and SemVerTag.
+   </p>
+   <hr/>
+   <br>
+	-->
 
 
-      <h3>Philosophy</h3>
-      <p>
-      Software Engineers often need to utilize knowledge from more than one domain for developing a single application, 
-      where a domain is an area of knowledge such as an industry field or a subject of interest. 
-      Knowledge utilized within an application may belong to its core domain, supporting domains or other generic domains.
-      Mushin perceives this utilization in the form of a stack of middlewares that resonates well with the 
-      <a href="https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern">Chain-of-responsibility pattern</a>.
+	<h3>Philosophy</h3>
+	<p>
+	<b> "In the beginner's mind there are many possibilities, in the expert's there are a few." - Zen Proverb </b>
+   </br>
+	</br>
+	A <b>domain</b> is an area of knowledge such as an industry field or a subject of interest.
+	</br>
+	</br>
+	Enabling <b>Domain Experts</b> the means to contribute to software artifacts of their areas of expertise, drives well-matured domains.
+	</br>
+	</br>
+	Enabling <b>Software Engineers</b> the means to utilize well-matured domains into their applications drives well-developed applications.
+	</br>
+	</br>
+	Mushin enables the generation of Domain-specific Frameworks(DSFs), thus that <b>Domain Experts</b> may colloberativly encapsulate their domain expertise into a continously refined software artifact, a DSF. DSFs are utilized in Ruby applications.
+	</br>
+	</br>
+	Mushin-based DSFs complements Ruby applications with seamless, yet powerful support of Domain-specific Languages, CQRS, EventSourcing, and Pluggable Domain Extenstions.
+	</p>
+	</br>
+	<hr/>
+	<h3>Showcases</h3>
+	<b>GameOn</b>: Video Showcase for developing a Gamification DSF and Mushin Extenstions.
+	</br>
+	</br>
+	<b>zTorrents</b>: Video Showcase for developing a Torrents scraping DSF and Mushin Extenstions.
+	</br>
+	</br>
+	<hr/>
 
-      <div class="highlight">
-	<pre>
-<code class='ruby'>
-require 'mushin'
-Mushin::Stack.new do 
-	# core domain 
-	# in relevance to the application 
-	use  DomainA, {}, {}
-
-	# supporting domains 
-	# in relevance to the application 
-	use  DomainB, {}, {}
-	use  DomainC, {}, {}
-	use  DomainD, {}, {}
-
-	# generic domains 
-	# in relevance to the application 
-	use  DomainE, {}, {}
-	use  DomainF, {}, {}
-	use  DomainG, {}, {}
-end
-	</code></pre>
-
-      </div>
-
-      <div class="highlight">
-	<pre>
-<code class='ruby'>
-require 'mushin'
-class Bot < Mushin::Ext
-	def initialize(app=nil, opts={}, params={})
-	   @app     = app
-	   @opts    = opts 
-	   @params  = params 
-	end
-	def call(env)
-           # Inbound maniuplation
-	   env[:var] = "new_value_inbound"
-
-	   @app.call(env)
-
-	   #Outbound maniuplation
-	   env[:var] = "new_value_outbound"
-
-	end
-end
-
-# Testing any Mushin Extenstion goes like this 
-state = {:var => "value"}
-bot = Bot.new Proc.new {},{},{}
-bot.call(state)
-
-# depends on your testing framework, 
-# this one assumes minitest/spec
-#state[:var].must_equal "new_value_outbound" 
-p state[:var]
-	</code></pre>
-
-      </div>
-
-      </p>
-      <hr/>
-      <br>
-
-
-      <h3>Open Source</h3>
-      <p>can we do better? read the  <a href="http://mushin-rb.github.io/">source</a>, <a href="https://github.com/mushin-rb/mushin/fork">fork</a> it, or submit a <a href="https://github.com/mushin-rb/mushin/issues/new">feature request\report a bug</a> to improve it, all contributions count! 
-      </p>
-      <p>
-<!--
-      <script data-gittip-username="theotherstupidguy"
-	data-gittip-widget="button"
+	<h3>Open Source</h3>
+	<p>read the  <a href="http://mushin-rb.github.io/">source</a>, <a href="https://github.com/mushin-rb/mushin/fork">fork</a> it, or submit a <a href="https://github.com/mushin-rb/mushin/issues/new">feature request\report a bug</a> to improve it, all contributions are welcomed! 
+	</p>
+	<p>
+	<!--
+   <script data-gittip-username="theotherstupidguy"
+data-gittip-widget="button"
 	src="//gttp.co/v1.js"></script>
-      -->
-      </p>
-      <hr/>
-      <br>
+   -->
+	</p>
+	<hr/>
+	<br>
 
-      <h3>License</h3>
-      <p>MIT license</p>
-      <hr/>
-<!--
-      <br>
-      <h3>Support</h3>
-      <p>please refer to Built-with-mushin wikipage to checkout most recent domain frameworks and consulting services offered via the community members. </p> 
-      <hr/>
-      <br>
-      -->
-      <h3>IRC</h3>
-      <p> join the team at #mushin-rb on irc.freenode.net </p>
-      <p> get consulting at #hackspree on irc.freenode.net </p>
+	<h3>License</h3>
+	<p>MIT license</p>
+	<hr/>
+	<!--
+   <br>
+   <h3>Support</h3>
+   <p>please refer to Built-with-mushin wikipage to checkout most recent domain frameworks and consulting services offered via the community members. </p> 
+   <hr/>
+   <br>
+	-->
+	<h3>IRC</h3>
+	<p> general questions at #ruby on irc.freenode.net </p>
+	<p> dev discussions at #mushin-rb on irc.freenode.net </p>
+	<!--
+   <p> Consulting requests at #hackspree on irc.freenode.net </p>
+	-->
+	<h3>Credits</h3>
 
-      <h3>Credits</h3>
-      <p> <a href="https://github.com/mitchellh">@mitchellh</a> - <strong>Rack Middleware as a General Purpose Abstraction - MountainWest RubyConf 2012</strong> </p>
-      <p> <a href="https://github.com/dwhelan">@dwhelan</a> & <a href="https://github.com/ericroberts">@ericroberts</a>- <strong>Domain Driven Design and Hexagonal Architecture with Rails - RailsConf Chicago 2014</strong> </p>
-      <p> <a href="https://github.com/richhickey">@richhickey</a> - <strong>Simplicity Matters - RailsConf Keynote Austin, Texas 2012 </strong> </p>
-      <p> <a href="https://github.com/emadb">@emadb</a> - <strong>Ruby loves DDD - RuPy Budapest, Hungary 2013</strong> </p>
+	<p> <a target="_blank" href="https://github.com/richhickey">@richhickey</a> - <strong>Simplicity Matters - RailsConf Keynote Austin, Texas 2012 </strong> </p>
+	<p> <a target="_blank" href="#">@uncle bob</a> - <strong>Keynote: Architecture the Lost Years</strong> </p>
+	<p> <a target="_blank" href="https://github.com/mitchellh">@mitchellh</a> - <strong>Rack Middleware as a General Purpose Abstraction - MountainWest RubyConf 2012</strong> </p>
+	<p> <a target="_blank" href="https://github.com/dwhelan">@dwhelan</a> & <a href="https://github.com/ericroberts">@ericroberts</a>- <strong>Domain Driven Design and Hexagonal Architecture with Rails - RailsConf Chicago 2014</strong> </p>
+	<p> <a target="_blank" href="https://github.com/emadb">@emadb</a> - <strong>Ruby loves DDD - RuPy Budapest, Hungary 2013</strong> </p>
 
-      <p> <a href="#">@uncle bob</a> - <strong>Keynote: Architecture the Lost Years</strong> </p>
-      <br>
+	<p> <a target="_blank" href="https://twitter.com/zotherstupidguy">@zotherstupidguy</a> - <strong> Putting the mushin project together! RubyConfEgypt, Egypt</strong> </p>
+	<br>
 
       </section>
       <footer>
-      <a href="http://badge.fury.io/rb/mushin"><img src="https://badge.fury.io/rb/mushin@2x.png" alt="Gem Version" height="18"></a>
-        <!--
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      -->
+	<a target="_blank" href="http://badge.fury.io/rb/mushin"><img src="https://badge.fury.io/rb/mushin@2x.png" alt="Gem Version" height="18"></a>
+	</br>
+   </br>
+   <p>
+   <span>
+     <a target="_blank" href="https://hackspree.com">
+       <i class="fa fa-terminal" aria-hidden="true"></i>
+       with 
+       <i class="fa fa-heart-o" aria-hidden="true"></i>
+       by hackspree</span>
+     </a>
+     <a target="_blank" href="https://twitter.com/hackspree">
+       <i class="fa fa-twitter"></i>
+     </a>
+     <a target="_blank" href="https://twitrss.me/twitter_user_to_rss/?user=hackspree">
+       <i class="fa fa-rss" aria-hidden="true"></i>
+     </a>
+     </span>
 
+     <!-- Begin MailChimp Signup Form -->
+     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+     <style type="text/css">
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+     </style>
+     <div id="mc_embed_signup">
+       <form action="//hackspree.us14.list-manage.com/subscribe/post?u=bbc38af00932b848164618284&amp;id=0ae49d1744" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	 <div id="mc_embed_signup_scroll">
+	   <label for="mce-EMAIL">Subscribe to our mailing list</label>
+	   <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bbc38af00932b848164618284_0ae49d1744" tabindex="-1" value=""></div>
+	   <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	 </div>
+       </form>
+     </div>
+
+     <!--End mc_embed_signup-->
+   </p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-	try {
-	  var pageTracker = _gat._getTracker("UA-51567040-1");
-	  pageTracker._trackPageview();
-	} catch(err) {}
-      </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+try {
+  var pageTracker = _gat._getTracker("UA-51567040-1");
+  pageTracker._trackPageview();
+} catch(err) {}
+    </script>
 
-    </body>
-  </html>
+  </body>
+</html>
